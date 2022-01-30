@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{amssymb}
+ %\input chemfig.tex
+\usepackage{chemfig}
+\usepackage{background}
+\usepackage{float}
+ 
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\backgroundsetup{contents=structure dictates function,opacity=0.35,scale=4,color=blue,angle=40}
+%\SetWatermarkText{STRUCTURE DICTATES FUNCTION}
+\title{Summary of Lec 8}
+\author{Milan Anand Raj\\manandraj20@iitk.ac.in}
+\date{Jan 29}
+\begin{document}
+\NoBgThispage
+\maketitle
+
+
+
+\begin{center}
+\textbf{INDIAN INSTITUE OF TECHNOLOGY}
+
+kanpur
+\end{center}
+
+
+\vfill
+\begin{figure}
+\centering
+\includegraphics[scale=.1]{iitk.jpg}
+\end{figure}
+\clearpage
+\tableofcontents
+\clearpage
+\NoBgThispage
+\section{Ligand-protein interaction}
+The way we have evolved, oxygen($O_{2}$) is required for the synthesis of energy packets in our body. If oxygen were supposed to traverse its journey from the nostrils to all peripheral tissues on its own simply by diffusion, it would have taken billion of years for them to be delivered to all the tissues! Instead we have a protein molecule at rescue! It's no surprise that protein molecule show up where some critical functions are needed. The credit can be devoted mainly to the integrity of its structures.
+
+But here we go ! Among all the 20 proteins, not a single has been found to show any affinity with the oxygen molecule. A prosthetic group, which can bind to oxygen well, is in action to accomplish the task.
+
+
+\subsection{Heme Group}
+The prosthetic group, we were talking about earlier, is a Heme group. It's basically a protoporphyrin ring to which is bound a single iron atom in its Ferrous state ($Fe^{2+}$). It is a planar structure with two orbitals of $Fe^{2+}$ pointing up and below the plane and four coordinate bonds in the plane.
+
+The coordinated nitrogen atoms help prevent conversion of the heme iron to the ferric ($Fe^{3+}$) state which does not bind $O_{2}$.
+However, there is a massive problem here. The Heme group can bind to the CO 20,000 better than it can bound to $O_{2}$. This is the reason heme group is assciated with Globin proteins to carry $O_{2}$. The heme group is buried deep down the structure in the Myoglobin protein. Its relative binding to CO is attenuated to a factor of 100 over $O_{2}$. The burying of the heme prevents a reaction that would occur with free heme in solution in which one $O_{2}$ binds to two sandwiched heme groups and oxidizes iron to Fe3+.
+\clearpage
+\subsection{Globin protein}
+Globin proteins are the ones which are involved in transport, storage and sensing of gases such as $N_{2}$, $O_{2}$, CO etc. Their primary sequence are not much similar even then they all have similar tertiary and secondary structures.
+\subsubsection{Structure and nomenclature}
+They are primarily $\alpha$ helices. Generally, a single Globin polypeptide has 8 helices marked A through H. The structure at the turns are named on the basis of the helices they are part of. The amino acids are either numbered on the basis they are present in the polypeptide chain or the relative position on a particular Helix. 
+\subsubsection{Globins known}
+There are four globins distinctively known hitherto. They are :-
+\begin{itemize}
+\item Myoglobin :- They are generally involved in the storage of $O_{2}$ as their affinity for $O_{2}$ is very high.
+\item Haemoglobin :- This is a tetrameric protein which is specialised in transport of oxygen owing to its transition between T and R state.
+\item Neuroglobin :- A monomeric protein generally expressed in neurons. It makes sure brain cells don't get devoid of oxygen and ensures smooth blood supply to the brain.
+\item Cytoglobin :- Not much is known about cytoglobin, though.
+\end{itemize}
+\subsubsection{Myoglobin}
+It is a monomeric, globular protein that contains one prosthetic group. The E and F $\alpha$ helices position the heme group in its place. The proximal Histidine residue coordinate one of $Fe^{2+}$ axial bond. The other is left for oxygen to bind. Although the distal histidine is too far away to interact with $ Fe^{2+}$, it can interact with the ligand bound to $Fe^{2+}$.
+This distal ligand binding is what is known to bring down the binding affinity of CO by causing shear stress in the CO structure. When $O_{2}$ binds to heme, the electronic properties of the iron atom change and solutions containing the heme turn from a \textcolor{purple}{dark purple} to a bright \textcolor{red}{ red color}.
+\clearpage
+\subsection{Mathematical relation for ligand-protein chemistry}
+The binding of a protein to its ligand is reversible. It is characterised by the reaction 
+\begin{center}
+$[L]+[P]\rightleftarrows [LP]$
+\end{center}
+The association constant($K_{a}$) governing the above described reaction is given by $ K_{a}$ $\frac{[LP]}{[L][P]}$.
+Transforming the equation a bit gives,
+\begin{center}
+$K_{a}[L]=\frac{[LP]}{[P]}$
+\end{center}
+or, the ratio of bound to free protein is proportional to the conc. of ligand.
+
+The binding equilibrium is described by yet another value $\theta$. $\theta$ is mathematically defined as the ratio of occupied binding site to the total binding site.
+\begin{center}
+$ \theta= \frac{[PL]}{([P]+[L])}$
+\end{center}
+It can be derived that $ \theta= \frac{[L]}{(K_{d}+[L])}$   where $K_{d}$ is the reciprocal of $K_{a}$. It is hyperbolic curve which saturates at infinitely high value of ligand conc. $K_{d}$ relates to the ligand conc. at which $\theta$ is half.
+
+The same analogy can be extended to oxygen-myoglobin interaction with the slight replacement of conc of ligand with its partial pressure as partial pressure of a volatile substance above its solution is proportional to its level of dissolution in the solution.
+The transformed equation is $\theta= \frac{pO_{2}}{(pO_{2}+p50)}$ , where p50 corresponds to partial pressure of oxygen at which half of the binding sites of myoglobin are occupied.
+
+\end{document}

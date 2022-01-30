@@ -1,0 +1,105 @@
+\documentclass[12pt]{article}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{amssymb}
+ %\input chemfig.tex
+\usepackage{chemfig}
+\usepackage{background}
+%\usepackage{float}
+ 
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\backgroundsetup{contents=structure dictates function,opacity=0.35,scale=4,color=blue,angle=40}
+%\SetWatermarkText{STRUCTURE DICTATES FUNCTION}
+\title{Summary of Lec 2}
+\author{Milan Anand Raj\\manandraj20@iitk.ac.in}
+\date{Jan 14}
+\begin{document}
+\NoBgThispage
+\maketitle
+
+
+
+\begin{center}
+\textbf{INDIAN INSTITUE OF TECHNOLOGY}
+
+kanpur
+\end{center}
+
+
+\vfill
+\begin{figure}
+\centering
+\includegraphics[scale=.1]{iitk.jpg}
+\end{figure}
+\clearpage
+\tableofcontents
+\clearpage
+\NoBgThispage
+\section{Enzymes}
+With mere presence ,enzymes have been found to lower the activation energy of biochemical reactions by great factors[Figure \ref{fig oip}]!Also there are certain convolutions on the surface of enzymes that can help target the enzymes!
+\begin{figure}[h]
+\centering
+\includegraphics[scale=.6]{OIP.jpg}
+\caption{Lowering of activation energy}
+\label{fig oip}
+\end{figure}
+Making use of the allosteric sites, various drugs have been designed. Diving into the cryptic details of their mechanisms of operations is of great importance.
+\subsection{Classification}
+Though there are various grounds on which they can be classified. We will be looking at the most obvious of them.
+\begin{enumerate}
+\item Simply proteins.
+\item Holoenzymes-They work in coordination with some other chemical moiety.The protein part of holoenzyme is called apoenzyme. And, the non-protein part is called cofactor.
+
+Cofactors branch to two sections.
+\begin{itemize}
+\item Prosthetic group-They are small inorganic molecules tightly bonded to enzymes.For example,$Fe^{2+}$ in haemoglobin.
+\item Coenzyme-They are large organic molecules which loosely bind to enzymes. For example, vitamins.
+\end{itemize}
+\end{enumerate}
+\clearpage
+\subsection{Michaelis-Menten Equation}
+Based on some hypothetical assumptions ,Michalis-Menten reached to a relation between rate of reaction and the conc. of substrate at any point in time.
+\begin{center}
+
+$$v_{o}=\frac{V_{max}[S]}{K_{m}[S]}$$
+\end{center}
+where
+\begin{align}
+v_{o}&=the ~initial~ rate~ of~ reaction\\
+[S] &= {conc.}~ of ~substrate ~at~ any ~point~ in~ time\\
+V_{max}&=the~ maximum~ reaction~ rate~ that~ can~ be~ achieved ~at ~the ~given ~enzyme~ conc.\\
+K_{m}&=conc.~of~ substrate~ when~ reaction~ rate~ is~ \frac{V_{max}}{2}.
+\end{align}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=.4]{maxresdefault.jpg}
+\label{fig mme}
+\caption{Michaelis-Menten Equation}
+
+\end{figure}
+
+\subsubsection{Deciphering the equation}
+\begin{enumerate}
+\item The substrate concentration has a profound effect on the rate of enzyme catalyzed reactons.
+
+\schemestart \chemname{E}{Enzyme}\hspace{1cm}     +  \hspace{1cm}      \chemname{S}{substrate}\arrow{<=>[$k_{1}$][$k_{-1}$]}[30,1.5]\hspace{1cm}\chemname{E-S}{Enzyme substrate complex}\hspace{1cm}\arrow{<=>[$k_{2}$][$k_{-2}$]}[-30,1.5]\chemname{E}{enzyme}\hspace{1cm}+\hspace{1cm}\chemname{P}{product}\schemestop
+
+\item The rate of the catalyzed reaction will obviously be at a maximum when virtually all of the enzyme is present in the ${ES}$ complex and the conc. of free enzyme is vanishingly small.
+\item Since the second reaction is slow rate determining step, the enzyme will always be saturated of the substrate in excess.
+
+\end{enumerate}
+\clearpage
+\subsection{Inhibition of enzymes}
+The inhibition of enzyme function can happen in two ways.
+\begin{itemize}
+\item Reversible Inhibition - Pseudo substrate imitating the structure of original substrate. It can be overcome by having original substrate in excess.
+\item Irreversible Inhibition - Some regulatory moiety attaches to the allosteric site on the enzyme bringing in the conformational changes in the structure of enzyme. Substrate conc. has no effect in reversing the situation.
+\end{itemize}
+
+\subsection{Transition state complementarity of enzyme}
+Having an enzyme that has structure complementary to the structure of transition state, we can reduce the activation energy by a great factor. This is accompanied because of energy favourable interaction between enzyme and transition state. On the other hand, complementarity to substrate merely diverts the reaction. 
+
+\end{document}

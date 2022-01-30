@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{amssymb}
+ %\input chemfig.tex
+\usepackage{chemfig}
+\usepackage{background}
+%\usepackage{float}
+ 
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\backgroundsetup{contents=structure dictates function,opacity=0.35,scale=4,color=blue,angle=40}
+%\SetWatermarkText{STRUCTURE DICTATES FUNCTION}
+\title{Summary of Lec 6 and Lec 7}
+\author{Milan Anand Raj\\manandraj20@iitk.ac.in}
+\date{Jan 22}
+%\usepackage{hyperref}
+\begin{document}
+\NoBgThispage
+\maketitle
+
+
+
+\begin{center}
+\textbf{INDIAN INSTITUE OF TECHNOLOGY}
+
+kanpur
+\end{center}
+
+
+\vfill
+\begin{figure}
+\centering
+\includegraphics[scale=.1]{iitk.jpg}
+\end{figure}
+\clearpage
+\tableofcontents
+\clearpage
+\NoBgThispage
+\section{Virtual Screening}
+The previous \textbf{High Throughput Screening} method is time and resource intensive. As a bonus, we have better way which is based on \textbf{Artificial Intelligence}. There we don't need to screen thousands ! Our computer will compute the best fit inhibitor ! This is not a high scale technique because of its limited efficacy. However, its improvement in efficacy has shown exponential trends and it is assumed that it will lead the market in coming decades!
+Let's dive in to look at its scope.
+
+
+
+\subsection{First Instance of Virtual Screening }
+We will see the design of GAPDH enzyme inhibitor. We want to target the GAPDH enzyme of sleeping sickness parasite \textit{Trypanosoma Brucei}. The problem is that our body also express \textbf{homologus} GAPDH enzyme for certain purposes. We need to design the drug in such a way that the enzymatic activity of parasitic GAPDH is attenuated but mammalian GAPDH.
+\vfill
+\subsubsection{Structural differences between mammalian and parasitic GAPDH}
+GAPDH is a regulatory enzyme or, it requires activator to switch to its competent form. NAD is the activator of GAPDH. Adenine spans some part of NAD. We try to modify the Adenine in a way that it deviates the NAD structure. Since it is no longer NAD, it starts to inhibit the activity of GAPDH. \textbf{We selected Adenine for it inhibits the parasitic enzymatic activity slightly worse than the mammalian enzyme.} 
+Refer to [Figure \ref{fig gapdh}].
+\begin{figure}[h]
+\centering
+\includegraphics[scale=.8]{gapdh.jpg}
+\label{fig gapdh}
+\caption{GAPDH}
+\end{figure}
+\clearpage
+\vfill
+\subsubsection{Extra cleft in the parasitic GAPDH}
+
+We need to look at the deviations in the structure of mammalian GAPDH and parasitic GAPDH in order to modify on our Adenine structure so that parasitic enzymatic inhibition is enhanced and mammalian enzymatic activity is reduced. 
+
+
+It turns out that Hydroxyl terminal of modified Adenine can be extended to fit in the active site of parasitic enzyme more accurately thereby enhancing the inhibition activity.Refer to [Figure \ref{fig cleft} ]
+
+           The extended part rather interferes with the mammalian GAPDH structure. As a result, it doesn't fit properly in the active site and inhibition activity is suppressed.
+Refer to [Figure \ref{fig hampers}].\
+\begin{figure}[h]
+\centering
+\includegraphics[scale=.8]{cleft.jpg}
+\caption{Cleft in GAPDH}
+\label{fig cleft}
+\end{figure}
+\hfill
+\begin{figure}[h]
+\centering
+\includegraphics[scale=.8]{hamper.jpg}
+\caption{No cleft}
+\label{fig hampers}
+
+\end{figure}
+\clearpage
+%$m^\text{pro}$
+\subsection{$M^\text{pro}$ inhibition}
+COVID-19 has created a pandemic situation all over the world. It has spread in nearly every continent. Researchers all over the world are trying to produce an effective vaccine against this virus, however; no specific treatment for COVID-19 has been discovered -so far. The current work describes the inhibition study of the SARS-CoV-2 main proteinase by natural and synthetic inhibitors.
+Molecular Docking study was carried out using the programs like AutoDock 4.0, HADDOCK2.4, patchdock, pardock, and firedock. 
+
+ 
+
+
+
+
+\end{document}

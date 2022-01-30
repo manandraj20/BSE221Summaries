@@ -1,0 +1,107 @@
+\documentclass[12pt]{article}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{amssymb}
+ %\input chemfig.tex
+\usepackage{chemfig}
+\usepackage{background}
+%\usepackage{float}
+ 
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\backgroundsetup{contents=structure dictates function,opacity=0.35,scale=4,color=blue,angle=40}
+%\SetWatermarkText{STRUCTURE DICTATES FUNCTION}
+\title{Summary of Lec 5}
+\author{Milan Anand Raj\\manandraj20@iitk.ac.in}
+\date{Jan 22}
+%\usepackage{hyperref}
+\begin{document}
+\NoBgThispage
+\maketitle
+
+
+
+\begin{center}
+\textbf{INDIAN INSTITUE OF TECHNOLOGY}
+
+kanpur
+\end{center}
+
+
+\vfill
+\begin{figure}
+\centering
+\includegraphics[scale=.1]{iitk.jpg}
+\end{figure}
+\clearpage
+\tableofcontents
+\clearpage
+\NoBgThispage
+\section{Design and discovery of inhibitors}
+So far we have learned about how certain chemical entities can inhibit the activity of enzymes either reversibly, or irreversibly. We also briefed the two ways, namely \textbf{High ThroughPut Screening} and \textbf{Virtual analysis}, we do inhibitor design and discovery.
+
+We employ appropriate functional assays to filter out the potential candidates for enzyme inhibition from the pool of \textbf{thousands}! The candidate compounds are screened in parallel. This technique is what is employed in dominant biotechnological and pharmaceutical industries nowadays. So, it is important for us, bioengineers, to explore it. 
+
+Refer to [Figure \ref{fig bigwell}]
+\begin{figure}[h]
+\centering
+\includegraphics[scale=.2]{bigwell.jpg}
+\caption{Big well}
+\label{fig bigwell}
+\end{figure}
+
+\vfill
+
+\subsection{Archetypal pipeline of inhibitor discovery  }
+There is a generalization of steps one needs to follow in order to design drugs.
+\begin{center}
+\textbf{Take the library of compatible drug compounds  }
+
+$\downarrow$
+
+\textbf{Do in-vitro screening}
+
+$\downarrow$
+
+\textbf{Filter out the hits from the pool observing the behaviour of your assay}
+
+$\downarrow$
+
+\textbf{Furthur in-vivo stages}
+
+
+\end{center}
+\clearpage
+
+
+
+\subsection{An instance of functional assay}
+There are several assays which can be used to determine enzyme activity and cell viability.
+For example, degree of fluorescence of the material, intensity of turbidity in the solution, measure of radioactivity, changes in pH, rate of cell division, certain product concentration, electromagnetic radiation absorption response etc.
+We will look at the fluorescence activity assay in detail. The cost of not looking at every potential assay methods is compensated by the huge pedagogical gain after going through the essence of fluorescence assay.
+
+
+The quintessence steps are listed below:
+\begin{enumerate}
+\item A potential fluorescence protein molecule is selected.
+\item The sequence which fits the active site of our enzyme of interest is ligated, along with a  hydrophobic quenching peptide, with the above protein molecule.
+\item Due to the modification in structure of fluorescence protein, its fluorescent activity is attenuated.
+\item The above modified protein is taken to the big well (library of compounds being screened for potential inhibitor) containing enzyme.
+\item Whenever the compound in any stack of our library fits the active site or allosteric site of the enzyme, the activity of enzyme is hampered and the fluorescent molecule remains in its inactive state.
+\item On the other hand, the absence of inhibition activity implies cleavage of active sequence on the fluorescent molecule releasing the hydrophobic quenching peptide. This enhances the fluorescent activity of the protein
+\item This way we can filter which slots in our library contain the compound needed for inhibition.
+\item 
+\end{enumerate}
+Refer to [Figure \ref{fig fl}].
+\begin{figure}[h]
+\centering
+\includegraphics[scale=.4]{fluorescence.jpg}
+\label{fig fl}
+\caption{fluorescence assay}
+\end{figure}
+\clearpage
+
+
+\end{document}
